@@ -152,3 +152,64 @@ function openProfile(){
 
 </body>
 </html>
+
+
+
+<div id="loginScreen">
+
+  <div class="logoBox">
+    <img src="YOUR_LOGO.png" class="rotateLogo">
+  </div>
+
+  <h1>ULTRA SIGMA</h1>
+
+  <button onclick="enterGame()">
+    ENTER GAME
+  </button>
+
+</div>
+
+
+#loginScreen{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  z-index:9999;
+}
+
+.rotateLogo{
+  width:180px;
+  animation:spin 5s linear infinite;
+}
+
+@keyframes spin{
+  from{
+    transform:rotateY(0deg);
+  }
+
+  to{
+    transform:rotateY(360deg);
+  }
+}
+
+
+
+function enterGame(){
+
+  document.getElementById(
+    "loginScreen"
+  ).style.display = "none";
+
+}
+
+
+.lobby{
+  height:100vh;
+  background-size:cover;
+  background-position:center;
+}

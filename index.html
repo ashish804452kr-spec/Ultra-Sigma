@@ -1,1 +1,43 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ultra Sigma - Bihar Battle</title>
+    <style>
+        body { margin: 0; background: #050508; color: white; overflow: hidden; font-family: sans-serif; }
+        #game-screen { width: 100vw; height: 100vh; background: url('https://i.imgur.com/your_map_image.jpg') center/cover; position: relative; }
+
+        /* सभी बटन्स की जगह */
+        .btn { position: absolute; border: 2px solid white; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; user-select: none; }
+        
+        #fire-btn { bottom: 50px; right: 50px; width: 100px; height: 100px; background: #ff007f; }
+        #glow-wall { bottom: 150px; right: 200px; width: 70px; height: 70px; background: #00f2fe; }
+        #medkit { bottom: 50px; right: 200px; width: 70px; height: 70px; background: #00ff00; }
+        #gun-switch { top: 20px; right: 20px; width: 60px; height: 60px; background: #333; }
+
+        #char { position: absolute; bottom: 50px; left: 20%; width: 150px; }
+        #ui-top { top: 10px; left: 10px; font-size: 20px; }
+    </style>
+</head>
+<body>
+
+<div id="game-screen">
+    <div id="ui-top">HP: 200 | RANK: Level 1</div>
+    
+    <img id="char" src="APKE_CHARACTER_KA_LINK" alt="Character">
+
+    <div id="fire-btn" class="btn" onclick="alert('FIRE!')">FIRE</div>
+    <div id="glow-wall" class="btn" onclick="alert('Glow Wall!')">WALL</div>
+    <div id="medkit" class="btn" onclick="alert('Healing!')">MED</div>
+    <div id="gun-switch" class="btn" onclick="alert('Switch Gun')">GUN</div>
+</div>
+
+<script>
+    // भविष्य में यहाँ हम गेम का असली लॉजिक जोड़ेंगे
+    console.log("Ultra Sigma Game Loaded!");
+</script>
+
+</body>
+</html>
